@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1>Застосунок пошуку фільмів</h1>
+      <div class="search">
+        <div class="search__group search__group--input">
+          <label class="search__label-input" for="search">Пошук фільму</label>
+          <input class="search__input" type="text" placeholder="Почніть вводити назву фільму" id="search">
+        </div>
+
+        <div class="search__group search__group--checkbox">
+          <input class="search__checkbox" type="checkbox" id="checkbox">
+          <label class="search__label-checkbox" for="checkbox">Додавати фільми до вже існуючого списку</label>
+        </div>
+      </div>
+      <div class="movies" id="movies-list"></div>
+      <div class="pagination" id="pagination">
+        <button class="pagination__btn" id="prev-page">Назад</button>
+        <span class="pagination__current">Сторінка <span id="current-page">3</span> з <span id="total-pages">331</span></span>
+        <button class="pagination__btn" id="next-page">Вперед</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
